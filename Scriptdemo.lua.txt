@@ -100,7 +100,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ngocbonggaming/script
   })
   
   AddButton(Tab3o, {
-     Name = "Buff 5x lucky",
+     Name = "Buff 5x lucky (key)",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/qbaoscript/x5/refs/heads/main/X5LuckyRandomVip.lua"))()
   end
@@ -113,6 +113,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ngocbonggaming/script
   end
   })
   
-    
+    AddButton(Tab1o, {
+     Name = "Giacdz",
+    Callback = function()
+      getgenv().team = "Marines"
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer:FindFirstChild("DataLoaded")
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/beab72edac68fb260ca9d214e83e2606.lua"))()
+  end
+  })
+
 
     
